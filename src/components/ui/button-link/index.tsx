@@ -10,7 +10,7 @@ interface ButtonLinkProps {
 
 export function ButtonLink({
                                text = "Schedule a Meeting",
-                               href = "#reach-out.json",
+                               href = "#reach-out",
                                className = ""
                            }: ButtonLinkProps) {
     return (

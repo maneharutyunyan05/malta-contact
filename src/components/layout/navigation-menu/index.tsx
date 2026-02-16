@@ -25,7 +25,6 @@ export function NavigationMenuComponent({ isMobile, menuLinkClassName }: Props) 
                 {mainNavItems.map((item, index) => (
                     <NavigationMenuItem key={index}>
                         <NavigationMenuLink
-                            asChild
                             className={cn(
                                 "text-white font-semibold",
                                 "hover:bg-transparent hover:text-white",
