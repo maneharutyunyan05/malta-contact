@@ -1,0 +1,28 @@
+{
+  "subtitle": "Our Process",
+  "title": " Our Network",
+  "description": " Introductions are handled with care and discretion, prioritising long-term trust and clear, direct access to the appropriate contacts.",
+  "content": [
+   " Our network consists of carefully selected local professionals and businesses across key sectors in Malta. Each contact is chosen for reliability, experience, and their ability to work effectively with international clients.",
+    "This is not a directory. It is a relationship-driven network built on long-term trust.",
+    "Professionals within the network are known for:"
+  ],
+  "features" : [
+    {
+      "icon": "/images/network/lift_to_talk.svg",
+      "text": "Clear and honest communication"
+    },
+    {
+      "icon": "/images/network/attach_money.svg",
+      "text": "Fair and transparent pricing"
+    },
+    {
+      "icon": "/images/network/timelapse.svg",
+      "text": "Responsiveness and follow-through"
+    },
+    {
+      "icon": "/images/network/local_convenience_store.svg",
+      "text": "Experience working with non-locals"
+    }
+  ]
+}

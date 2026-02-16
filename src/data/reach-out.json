@@ -1,0 +1,23 @@
+{
+  "subtitle": "Still have Questions?",
+  "title": "Reach out",
+  "description": "Book an in-person meeting or video/audio call.",
+  "contact_info": [
+    {
+      "type": "email",
+      "icon": {
+        "src": "/images/reach-out/mail.svg",
+        "alt": "Email"
+      },
+      "value": "hello@maltacontact.com"
+    },
+    {
+      "type": "phone",
+      "icon": {
+        "src": "/images/reach-out/call.svg",
+        "alt": "Phone"
+      },
+      "value": "+356 99 009 779"
+    }
+  ]
+}

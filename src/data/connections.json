@@ -1,0 +1,27 @@
+{
+  "subtitle": "Why Us",
+  "title": "Connections you need",
+  "description": "Introductions are handled with care and discretion, prioritising long-term trust and clear, direct access to the appropriate contacts.",
+  "features": [
+    {
+      "icon": "/images/features/home_work.png",
+      "title": "Property Agents",
+      "description": "Experienced professionals offering market knowledge, reliable guidance, and support for buying or renting residential or commercial property in Malta."
+    },
+    {
+      "icon": "/images/features/local_police.png",
+      "title": "Citizenship & Legal Professionals",
+      "description": "Established legal professionals experienced in citizenship, residency, and legal matters, with a strong understanding of Maltese regulations and international client requirements."
+    },
+    {
+      "icon": "/images/features/handshake.png",
+      "title": "Business Opportunities",
+      "description": "Well-established contacts providing insight into business opportunities across multiple sectors, including property, healthcare, hospitality, and emerging industries."
+    },
+    {
+      "icon": "/images/features/attach_money.png",
+      "title": "Banking & Crypto",
+      "description": "Professionals and institutions familiar with Malta’s banking landscape, including crypto-friendly options operating within regulatory and compliance frameworks."
+    }
+  ]
+}

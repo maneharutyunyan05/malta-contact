@@ -1,0 +1,22 @@
+{
+  "subtitle": "Our Process",
+  "title": "How it Works",
+  "description": " Introductions are handled with care and discretion, prioritising long-term trust and clear, direct access to the appropriate contacts.",
+  "steps": [
+    {
+      "number": "1",
+      "title": "Get in Touch by Scheduling a Meeting ",
+      "description": "Reach out by requesting a meeting or contacting us via WhatsApp or email. Share what you’re looking for and any relevant details so we can understand your needs clearly."
+    },
+    {
+      "number": "2",
+      "title": "We identify the right contacts",
+      "description": "Your request is reviewed carefully, and the most suitable local professionals or businesses are identified based on experience, relevance, and reliability."
+    },
+    {
+      "number": "3",
+      "title": "Introduction and ongoing support",
+      "description": "You are connected directly with the right people. We remain involved as much or as little as you prefer — whether acting as a local point of contact or stepping back entirely."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "subtitle": "Why We Exist",
+  "title": "About Us",
+  "description": "Moving to or doing business in an unfamiliar country can be unnecessarily time-consuming and confusing — especially without local knowledge.",
+  "extra": "Through a trusted local network, we connect people with the right professionals from the start.",
+  "image": {
+    "src": "/images/about-us/hero.webp",
+    "alt": "About Us"
+  },
+  "items": [
+    {
+      "icon": "/images/about-us/timelapse.svg",
+      "text": "Save time by avoiding endless searching and back-and-forth"
+    },
+    {
+      "icon": "/images/about-us/attach_money.svg",
+      "text": "Save money by reaching reliable professionals without “trial and error”"
+    },
+    {
+      "icon": "/images/about-us/verified.svg",
+      "text": "Gain clarity through direct access to people locals already trust"
+    }
+  ]
+}
