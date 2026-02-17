@@ -43,7 +43,7 @@ export function Header() {
                         "flex flex-col items-center p-5 gap-4 lg:hidden"
                     )}>
                         <h3 className="text-light-blue">MENU</h3>
-                        <NavigationMenuComponent isMobile/>
+                        <NavigationMenuComponent isMobile menuLinkClassName='text-[35px]'/>
                         <ButtonLink/>
                     </div>
                 )
