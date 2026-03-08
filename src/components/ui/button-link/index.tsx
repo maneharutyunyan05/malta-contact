@@ -6,16 +6,23 @@ interface ButtonLinkProps {
     text?: string;
     href?: string;
     className?: string;
+    visible?: boolean;
 }
 
 export function ButtonLink({
                                text = "Schedule a Meeting",
                                href = "#reach-out",
+                               visible = true,
                                className = ""
                            }: ButtonLinkProps) {
     return (
-        <Button asChild className={cn("bg-[#DD5757] hover:bg-[#DD5757]  text-lg w-fit ",
-            className)}>
+        <Button asChild
+                style={{display: visible ? "block" : "none"}}
+                className={cn(
+                    "bg-[#DD5757] hover:bg-[#DD5757] w-fit",
+                    "px-[33px] py-[11px] md:py-[11.9px] md:px-6 text-[15px] md:text-[19.2px] h-[45px] md:h-[52.8px]",
+                    className
+                )}>
             <NextLink href={href}>{text}</NextLink>
         </Button>
     );

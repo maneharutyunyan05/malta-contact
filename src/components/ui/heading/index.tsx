@@ -25,14 +25,16 @@ const Heading: FC<IHeadingProps & HeadingProps> = (
             className={clsx(
                 [
                     as === "h1" && [
-                        "text-[45px] sm:text-[56px] md:text-[72px] leading-tight font-medium",
+                        "text-[45px] leading-[54px] font-medium",
+                        "sm:text-[56px] sm:leading-[67px]",
+                        "md:text-[72px] md:leading-[86px]",
                         merriweather.className
                     ],
                     (as === "h2") && [
                         "text-[42px] sm:text-[48px] md:text-[52px]",
                         merriweather.className
                     ],
-                    (as === "h3") && "text-[25px] sm:text-[29px] md:text-[32px]",
+                    (as === "h3") && "text-[25px] sm:text-[29px] mdu:text-[32px]",
                     (as === "h4") && "text-[18px]",
                     (as === "h5") && "text-[14px] md:text-[16px]",
                     (as === "h6") && "text-[10px]",

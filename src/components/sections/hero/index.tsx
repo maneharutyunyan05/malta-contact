@@ -11,7 +11,7 @@ export function HeroSection() {
     const {isOpen} = useMenuStore();
 
     return (
-        <section className="relative ">
+        <section className="relative pt-[112px]  md:pt-[7rem] md:pb-[2.125rem] min-h-[645px]">
             <Image src={data.image.src}
                    alt={data.image.alt}
                    fill
@@ -27,15 +27,16 @@ export function HeroSection() {
             />
 
             <div className={cn(
-                "relative z-10 max-w-3xl text-white transition-opacity duration-300 ",
-                "flex flex-col gap-6 px-6 md:px-14 lg:px-20 pt-24 md:pt-52 pb-32 md:pb-64",
-                isOpen && "opacity-0"
+                "relative z-10 max-w-[40.5rem] text-white transition-opacity duration-300 ",
+                "flex flex-col gap-8 mx-6 md:mx-14 lg:mx-20 pt-[52.5px]  md:py-[10.413rem]",
+                isOpen && "opacity-0 "
             )}>
 
-                <Heading>{data.title}</Heading>
-                <p className="text-lg md:text-xl">{data.description}</p>
+                <Heading className="">{data.title}</Heading>
+                <p className="text-[1rem] md:text-[1.125rem] ">{data.description}</p>
 
-                <ButtonLink href="#reach-out"/>
+                <ButtonLink visible={!isOpen}
+                            href="#reach-out"/>
             </div>
         </section>
     );

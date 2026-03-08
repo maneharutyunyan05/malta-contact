@@ -58,7 +58,7 @@ function Text<
             render={({ field, fieldState }) => (
                 <Field className={className} data-invalid={fieldState.invalid}>
                     {label && (
-                        <FieldLabel htmlFor={id ?? field.name}>
+                        <FieldLabel htmlFor={id ?? field.name} className="leading-[18px] md:leading-[24px]">
                             {label}{" "}
                             {required && (
                                 <span className="text-destructive">

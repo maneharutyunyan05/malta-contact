@@ -20,4 +20,23 @@ export const mainNavItems: INavItem[] = [
         label: "About us",
         href: "/#about-us",
     },
-];
+]
+
+export const footerNavItems: INavItem[] = [
+    {
+        label: "About us",
+        href: "/#about-us",
+    },
+    {
+        label: "Services",
+        href: "/#services",
+    },
+    {
+        label: "How it Works",
+        href: "/#how-it-works",
+    },
+    {
+        label: "Contact",
+        href: "/#reach-out",
+    },
+]

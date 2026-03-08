@@ -1,58 +1,60 @@
-import { NavigationMenuComponent } from "@/components/layout/navigation-menu";
-import { cn } from "@/lib/utils";
-import { ButtonLink } from "@/components/ui/button-link";
-import { Logo } from "@/components/ui/logo";
+import {NavigationMenuComponent} from "@/components/layout/navigation-menu";
+import {cn} from "@/lib/utils";
+import {ButtonLink} from "@/components/ui/button-link";
+import {Logo} from "@/components/ui/logo";
+import {footerNavItems} from "@/lib/configs/site";
 
 export function Footer() {
     return (
-        <footer
-            className={cn(
-                "bg-primary rounded-t-[2rem] flex flex-col gap-2.5 md:gap-16",
-                "px-5 md:px-20 pt-14 pb-9 md:p-20 md:pb-8 mt-10 md:mt-[7rem]"
-            )}
+        <footer className={cn(
+            "bg-primary rounded-t-[2rem] flex flex-col md:gap-[30px]",
+            "px-4 md:px-20 pt-14 pb-[34.88px] md:p-20 md:pb-[30.77px] mt-[41px] md:mt-[112px]"
+        )}
         >
-            <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-0">
+            <div className="flex flex-col md:flex-row justify-between gap-[21px] md:gap-8 md:gap-0">
                 <div
                     className={cn(
-                        "flex flex-col gap-2.5",
+                        "flex flex-col gap-0 md:gap-2.5",
                         "items-center text-center md:items-start md:text-left",
                         "max-w-96 mx-auto md:mx-0"
                     )}
                 >
-                    <Logo />
+                    <Logo textClassName="text-[36px] leading-[47px]" imageClassname="w-8 h-8"/>
 
-                    <p className="pt-3 md:pt-0 text-lg text-white">
+                    <p className="pt-[21px] md:pt-0 text-lg text-white leading-[25.7px] md:leading-[21.5px] py-[21px]">
                         A trusted point of contact connecting people with reliable local professionals in Malta.
                     </p>
 
-                    <span className="text-[0.625rem] text-white font-normal">
+                    <span className="text-[0.625rem] text-white font-normal leading-[27px]">
                         All enquiries are handled discreetly and confidentially.
                     </span>
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-6 lg:gap-[2.3125rem] justify-center items-center">
+                <div className="flex flex-col lg:flex-row gap-[25px] lg:gap-[24px] justify-center items-start">
                     <div className="lg:hidden w-full">
                         <NavigationMenuComponent
+                            items={footerNavItems}
                             isMobile
-                            className="gap-[1.5625rem]"
-                            menuLinkClassName="text-[0.875rem]"
+                            className="gap-[1.5625rem] "
+                            menuLinkClassName="text-[0.875rem] !leading-[21px]"
                         />
                     </div>
 
                     <div className="hidden lg:block">
-                        <NavigationMenuComponent />
+                        <NavigationMenuComponent items={footerNavItems}/>
                     </div>
-                    <ButtonLink />
+
+                    <ButtonLink className="!h-[45px] md:!h-10 !text-[1rem] !py-[11px] md:!py-2 mx-auto"/>
                 </div>
             </div>
 
             <div
                 className={cn(
                     "flex flex-col md:flex-row justify-between items-center gap-6",
-                    "text-white text-center md:text-left"
+                    "text-white text-center md:text-left pt-6 md:pt-0"
                 )}
             >
-                <div className="max-w-xl">
+                <div className="max-w-xl leading-[10.5px] md:leading-[14.5px]">
                     <span className="text-[10px] font-bold">
                         Disclaimer
                     </span>
@@ -66,8 +68,8 @@ export function Footer() {
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-2 md:gap-5">
-                    <p className="text-sm">© 2026 MaltaContact</p>
-                    <p className="text-sm">Cookies settings</p>
+                    <p className="text-sm  leading-[23.5px]">© 2026 MaltaContact</p>
+                    <p className="text-sm  leading-[23.5px]">Cookies settings</p>
                 </div>
             </div>
         </footer>

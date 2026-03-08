@@ -52,7 +52,7 @@ export function Textarea<
             }}
             render={({field, fieldState}) => (
                 <Field className={className} data-invalid={fieldState.invalid}>
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 ">
                         {label && <FieldLabel htmlFor={field.name}>{label}</FieldLabel>}
                         {required && (
                             <span className="text-destructive">

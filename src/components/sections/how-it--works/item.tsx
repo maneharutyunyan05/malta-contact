@@ -14,13 +14,22 @@ export function Steps({
                           description
                       }: ItemProps) {
     return (
-        <div className="flex gap-2 text-white">
-            <div>
-                <Heading as="h3" className={cn("lining-nums", merriweather.className)}> {number}</Heading>
+        <div className="flex text-white gap-[10px]">
+            <div className='flex items-start h-fit'>
+                <span
+                    className={cn(
+                        "h-fit text-[45px] inline-block lining-nums w-12 leading-[48px] md:leading-[38px] px-[10.52px]",
+                        merriweather.className
+                    )}> {number}</span>
             </div>
             <div>
-                <Heading as="h3" className={merriweather.className}> {title}</Heading>
-                <p className="pt-4">{description}</p>
+                <Heading as="h3" className={cn(
+                    "leading-[30px] md:leading-[38px] ",
+                    merriweather.className
+                )}> {title}</Heading>
+                <p className="pt-4 text-[14px] leading-[1.3125rem] md:text-[1rem] md:leading-[1.5rem]">
+                    {description}
+                </p>
             </div>
         </div>
     );

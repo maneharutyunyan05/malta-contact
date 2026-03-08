@@ -55,18 +55,18 @@ export function ReachOutSection() {
     return (
         <section id="reach-out" className={cn(
             "flex flex-col md:flex-row gap-8 gap-20 md:gap-0",
-            "px-4 md:px-20 py-10 md:py-28",
+            "px-4 md:px-20 pt-[61px] pb-[71px]  md:py-28",
         )}>
-            <div className="flex-1 flex flex-col gap-4">
-                <p className="text-smoky-blue">{data.subtitle}</p>
+            <div className="flex-1 flex flex-col ">
+                <p className="text-smoky-blue pb-[6px] md:pb-4">{data.subtitle}</p>
                 <Heading as="h2" className={cn(
-                    "text-primary font-bold text-4xl",
+                    "text-primary font-bold text-4xl leading-[48px]  md:leading-[62px] pb-6",
                     merriweather.className)}>{data.title}</Heading>
-                <p className="text-primary">{data.description}</p>
+                <p className="text-primary text-[1rem] md:text-[18px] pb-8">{data.description}</p>
 
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 py-2">
                     {data.contact_info.map((contact, i) => (
-                        <div key={i} className="text-primary flex gap-4 items-center">
+                        <div key={i} className="text-primary flex gap-4 items-center text-sm md:text-[1rem]">
                             <Image
                                 src={contact.icon.src}
                                 width={24}
@@ -90,50 +90,60 @@ export function ReachOutSection() {
 
             <div className="flex-1">
                 <form action={formAction}>
-                    <FieldGroup className="gap-6 max-w-[600px]">
-                        <FieldSet>
-                            <div className="flex flex-col md:flex-row gap-2">
+                    <FieldGroup className="gap-[17px] md:gap-6 max-w-[600px]">
+                        <FieldSet className="text-[#000E21]">
+                            <div className="flex flex-col md:flex-row gap-6 md:gap-2">
                                 <Text
+                                    inputClassName="h-12"
+                                    className="gap-2"
                                     name="first_name"
                                     label="First Name"
                                     required
                                     control={form.control}
                                 />
-                                <Text
-                                    name="last_name"
-                                    label="Last Name"
-                                    required
-                                    control={form.control}
+                                <Text inputClassName="h-12"
+                                      className="gap-2"
+                                      name="last_name"
+                                      label="Last Name"
+                                      required
+                                      control={form.control}
                                 />
                             </div>
 
-                            <div className="flex flex-col md:flex-row gap-2">
-                                <Text
-                                    name="email"
-                                    label="Email"
-                                    required
-                                    control={form.control}
+                            <div className="flex flex-col md:flex-row gap-6 md:gap-2">
+                                <Text inputClassName="h-12"
+                                      className="gap-2"
+                                      name="email"
+                                      label="Email"
+                                      required
+                                      control={form.control}
                                 />
-                                <Text
-                                    name="phone_number"
-                                    label="Phone Number"
-                                    required
-                                    control={form.control}
+                                <Text inputClassName="h-12"
+                                      className="gap-2"
+                                      name="phone_number"
+                                      label="Phone Number"
+                                      required
+                                      control={form.control}
                                 />
                             </div>
 
                             <div className="">
                                 <Textarea
+                                    className="gap-2 !text-[1rem] font-normal"
                                     name="message"
                                     label="Message (include preferred date & time)"
                                     required
+                                    inputClassName="h-[332px]"
                                     placeholder="Type your message..."
                                     control={form.control}
                                 />
                             </div>
                         </FieldSet>
                         <div className="flex justify-center md:justify-start">
-                            <Button disabled={!isValid || pending} className="w-fit" type="submit">
+                            <Button disabled={!isValid || pending}
+                                    className={cn("w-fit text-[1rem] py-[10px] px-[100px] md:px-6 h-11",
+                                    )}
+                                    type="submit">
                                 {pending && <Spinner/>}
                                 Submit
                             </Button>

@@ -33,9 +33,9 @@ export function HorizontalScroll({ features }: { features: Feature[] }) {
 
     return (
         <div ref={sectionRef} className="relative w-full">
-            <div className="h-[26.8125rem] md:h-[22.9375rem] flex items-center overflow-hidden">
+            <div className="h-[26.75rem] md:h-[22.969rem] flex items-center overflow-hidden">
                 <motion.div
-                    style={{ x }}
+                    style={{x}}
                     ref={containerRef}
                     className="flex items-center gap-8 pl-6 md:pl-20 pe-6"
                 >
