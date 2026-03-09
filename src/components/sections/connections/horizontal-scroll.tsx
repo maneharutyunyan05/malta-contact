@@ -16,10 +16,10 @@ export function HorizontalScroll({ features }: { features: Feature[] }) {
     const [totalShift, setTotalShift] = useState(0)
 
     useEffect(() => {
-        if (!containerRef.current) return
+        if (!containerRef.current || !sectionRef.current) return
 
-        const scrollWidth = containerRef.current.scrollWidth + 24
-        const viewportWidth = window.innerWidth
+        const scrollWidth = containerRef.current.scrollWidth
+        const viewportWidth = sectionRef.current.clientWidth
 
         setTotalShift(scrollWidth - viewportWidth)
     }, [features])
@@ -33,7 +33,7 @@ export function HorizontalScroll({ features }: { features: Feature[] }) {
 
     return (
         <div ref={sectionRef} className="relative w-full">
-            <div className="h-[26.75rem] md:h-[22.969rem] flex items-center overflow-hidden">
+            <div className="h-[26.8125rem] md:h-[22.969rem] flex items-center overflow-hidden">
                 <motion.div
                     style={{x}}
                     ref={containerRef}

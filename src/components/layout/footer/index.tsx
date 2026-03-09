@@ -3,6 +3,7 @@ import {cn} from "@/lib/utils";
 import {ButtonLink} from "@/components/ui/button-link";
 import {Logo} from "@/components/ui/logo";
 import {footerNavItems} from "@/lib/configs/site";
+import {inter} from "@/config/font";
 
 export function Footer() {
     return (
@@ -33,9 +34,10 @@ export function Footer() {
                 <div className="flex flex-col lg:flex-row gap-[25px] lg:gap-[24px] justify-center items-start">
                     <div className="lg:hidden w-full">
                         <NavigationMenuComponent
+                            fontClassName={inter.className}
                             items={footerNavItems}
                             isMobile
-                            className="gap-[1.5625rem] "
+                            className="gap-[1.5625rem] !font-semibold"
                             menuLinkClassName="text-[0.875rem] !leading-[21px]"
                         />
                     </div>
@@ -44,14 +46,15 @@ export function Footer() {
                         <NavigationMenuComponent items={footerNavItems}/>
                     </div>
 
-                    <ButtonLink className="!h-[45px] md:!h-10 !text-[1rem] !py-[11px] md:!py-2 mx-auto"/>
+                    <ButtonLink
+                        className="!h-[45px] md:!h-10 !text-[1rem] !py-[11px] md:!py-2 !px-5 mx-auto md:rounded-[12px]"/>
                 </div>
             </div>
 
             <div
                 className={cn(
                     "flex flex-col md:flex-row justify-between items-center gap-6",
-                    "text-white text-center md:text-left pt-6 md:pt-0"
+                    "text-white text-center md:text-left pt-[41.98px] md:pt-0"
                 )}
             >
                 <div className="max-w-xl leading-[10.5px] md:leading-[14.5px]">
@@ -67,9 +70,9 @@ export function Footer() {
                     </p>
                 </div>
 
-                <div className="flex flex-col md:flex-row gap-2 md:gap-5">
-                    <p className="text-sm  leading-[23.5px]">© 2026 MaltaContact</p>
-                    <p className="text-sm  leading-[23.5px]">Cookies settings</p>
+                <div className="flex flex-col md:flex-row gap-1.5 md:gap-5 md:flex-row-reverse text-[13px]">
+                    <p className="leading-[23.5px]">Cookies settings</p>
+                    <p className="leading-[23.5px]">© 2026 MaltaContact</p>
                 </div>
             </div>
         </footer>

@@ -14,13 +14,15 @@ interface Props {
     isMobile?: boolean
     menuLinkClassName?: string
     className?: string
+    fontClassName?: string
 }
 
 export function NavigationMenuComponent({
                                             items,
                                             isMobile,
                                             menuLinkClassName,
-                                            className
+                                            className,
+                                            fontClassName =  merriweather.className
                                         }: Props) {
 
     if (isMobile) {
@@ -36,9 +38,9 @@ export function NavigationMenuComponent({
                         <Link
                             href={item.href}
                             className={cn(
-                                "block text-white font-medium !leading-[80px]",
+                                "block text-white !leading-[80px]",
                                 menuLinkClassName,
-                                merriweather.className
+                                fontClassName
                             )}
                         >
                             {item.label}
@@ -57,7 +59,7 @@ export function NavigationMenuComponent({
                         <NavigationMenuLink
                             asChild
                             className={cn(
-                                "text-white text-[16px]",
+                                "text-white text-[16px] px-4",
                                 "hover:bg-transparent hover:text-white",
                                 "focus:bg-transparent focus:text-white",
                                 menuLinkClassName

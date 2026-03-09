@@ -10,7 +10,9 @@ export function FaqsSection() {
             "px-5 md:px-20 pb-[79.55px] pt-[71px] md:pt-28 md:pb-[75px]"
         )}>
             <h2
-                className={cn("text-white font-bold text-[1.875rem] sm:text-[48px] md:text-[52px] leading-[36px] md:leading-[62px]",
+                className={cn(
+                    "text-white font-semibold !leading-[36px] md:!leading-[62px]",
+                    "text-[1.875rem] sm:text-[48px] md:text-[52px]",
                     merriweather.className
                 )}
             >

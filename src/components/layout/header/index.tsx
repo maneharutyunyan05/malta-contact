@@ -20,9 +20,9 @@ export function Header() {
         )}>
             <Logo/>
 
-            <div className="hidden lg:flex gap-9">
+            <div className="hidden lg:flex gap-[29px]">
                 <NavigationMenuComponent items={mainNavItems} />
-                <ButtonLink className="!h-[40px] !py-2 !px-5 !text-[16px]"/>
+                <ButtonLink className="!h-[40px] !py-2 !px-5 !text-[16px] md:rounded-[12px]"/>
             </div>
 
             <Button
@@ -44,7 +44,7 @@ export function Header() {
                         "flex flex-col items-center  lg:hidden pt-6"
                     )}>
                         <h3 className="text-light-blue leading-[36px] pb-[19.14px]">MENU</h3>
-                        <NavigationMenuComponent items={mainNavItems} isMobile menuLinkClassName='text-[35px] '/>
+                        <NavigationMenuComponent items={mainNavItems} isMobile menuLinkClassName='text-[35px] font-medium'/>
                         <ButtonLink className="mt-[28.85px]"/>
                     </div>
                 )

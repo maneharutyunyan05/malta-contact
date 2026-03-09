@@ -31,7 +31,7 @@ const Heading: FC<IHeadingProps & HeadingProps> = (
                         merriweather.className
                     ],
                     (as === "h2") && [
-                        "text-[42px] sm:text-[48px] md:text-[52px]",
+                        "text-[40px] sm:text-[48px] md:text-[52px]",
                         merriweather.className
                     ],
                     (as === "h3") && "text-[25px] sm:text-[29px] mdu:text-[32px]",

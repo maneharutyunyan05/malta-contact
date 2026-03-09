@@ -19,7 +19,7 @@ export function ButtonLink({
         <Button asChild
                 style={{display: visible ? "block" : "none"}}
                 className={cn(
-                    "bg-[#DD5757] hover:bg-[#DD5757] w-fit",
+                    "bg-[#DD5757] hover:bg-[#DD5757] w-fit rounded-[12.2px] md:rounded-[14.4px]",
                     "px-[33px] py-[11px] md:py-[11.9px] md:px-6 text-[15px] md:text-[19.2px] h-[45px] md:h-[52.8px]",
                     className
                 )}>
