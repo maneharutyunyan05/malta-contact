@@ -24,8 +24,8 @@ export function NetworkSection() {
                 {data.features.map(({icon, text}) => (
                     <div key={text}
                          className={cn(
-                             "flex flex-col mx-auto max-w-[284px] gap-[15px] md:gap-6",
-                             "mx-0 items-center md:items-start text-center md:text-start"
+                             "flex flex-col mx-auto max-w-[284px] gap-[15px] md:gap-6 ",
+                             "mx-auto items-center md:items-start text-center md:text-start"
                          )}>
                         <Image src={icon}
                                alt={text}

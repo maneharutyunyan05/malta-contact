@@ -2,7 +2,7 @@ import {Heading} from "@/components/ui/heading"
 import {ButtonLink} from "@/components/ui/button-link";
 import data from "@/data/how-it-works.json";
 import {cn} from "@/lib/utils";
-import {Steps} from "@/components/sections/how-it--works/item";
+import {Steps} from "@/components/sections/how-it-works/item";
 
 export function HowItWorksSection() {
     return (
