@@ -9,7 +9,7 @@ export function Footer() {
     return (
         <footer className={cn(
             "bg-primary rounded-t-[2rem] flex flex-col md:gap-[30px]",
-            "px-4 md:px-20 pt-14 pb-[34.88px] md:p-20 md:pb-[30.77px] mt-[41px] md:mt-[112px]"
+            "px-4 md:px-20 pt-14 pb-[22px] md:p-20 md:pb-[30.77px] mt-[41px] md:mt-[112px]"
         )}
         >
             <div className="flex flex-col md:flex-row justify-between gap-[21px] md:gap-8 md:gap-0">
@@ -54,7 +54,7 @@ export function Footer() {
             <div
                 className={cn(
                     "flex flex-col md:flex-row justify-between items-center gap-6",
-                    "text-white text-center md:text-left pt-[41.98px] md:pt-0"
+                    "text-white text-center md:text-left pt-[36.98px] md:pt-0"
                 )}
             >
                 <div className="max-w-xl leading-[10.5px] md:leading-[14.5px]">
@@ -71,8 +71,8 @@ export function Footer() {
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-1.5 md:gap-5 md:flex-row-reverse text-[13px]">
-                    <p className="leading-[23.5px]">Cookies settings</p>
-                    <p className="leading-[23.5px]">© 2026 MaltaContact</p>
+                    <p className="leading-[24.5px]">Cookies settings</p>
+                    <p className="leading-[24.5px]">© 2026 MaltaContact</p>
                 </div>
             </div>
         </footer>
